@@ -1,10 +1,10 @@
 from crewai import Agent
-from langchain.agents import load_tools
+from langchain_community.agent_toolkits.load_tools import load_tools
 
 
 human_tools = load_tools(["human"])
 
-class YoutubeAutomationAgent():
+class YoutubeAutomationAgents():
     def youtube_manager(self):
         return Agent(
             role = "Youtube Manager",
