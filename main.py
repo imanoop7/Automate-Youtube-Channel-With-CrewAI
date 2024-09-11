@@ -3,8 +3,8 @@ from crewai import Crew, Process
 from agents import YoutubeAutomationAgents
 from tasks import YoutubeAutomationTasks
 from langchain_ollama import ChatOllama
-from tools.youtube_video_details_tool import YoutubeVideoDetailsTool
-from tools.youtube_video_search_tool import YoutubeVideoSearchTool
+from youtube_video_details_tool import YoutubeVideoDetailsTool
+from youtube_video_search_tool import YoutubeVideoSearchTool
 
 from dotenv import load_dotenv
 load_dotenv()
