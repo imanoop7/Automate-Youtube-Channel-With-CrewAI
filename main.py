@@ -77,7 +77,8 @@ crew = Crew(
            manage_youtube_video_research,
            create_email_announcement_for_new_video],
     process=Process.hierarchical,
-    manager_llm=llm
+    manager_llm=llm,
+    config={'default_agent': 'ChatOllama'}
 )
 
 # Kick of the crew
