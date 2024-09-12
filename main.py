@@ -2,7 +2,7 @@ from crewai import Crew, Process
 
 from agents import YoutubeAutomationAgents
 from tasks import YoutubeAutomationTasks
-from langchain_ollama import ChatOllama
+from langchain_ollama import ChatOllama 
 from youtube_video_details_tool import YoutubeVideoDetailsTool
 from youtube_video_search_tool import YoutubeVideoSearchTool
 
@@ -82,6 +82,7 @@ crew = Crew(
 )
 
 # Kick of the crew
+print("Before kickoff:", crew)
 results = crew.kickoff()
 
 print("Crew usage", crew.usage_metrics)
